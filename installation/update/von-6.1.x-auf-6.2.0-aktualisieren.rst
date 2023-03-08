@@ -11,6 +11,8 @@ Dieses Dokument beschreibt das Update von OXID eShop 6.1.0 und höher auf OXID e
 
 .. todo: #ML: Infos verif.
 
+.. todo: #tbd: Verweis auf Vorgehen analog zu "VON AMAZON PAY 1.X AUF AMAZON PAY 2.X AKTUALISIEREN": Datenbank, Konfig-Einstellungen etc. sichern, Checkliste erstellen
+
 Wenn Sie PayPal Checkout V. 1.1 nutzen, dann deinstallieren Sie das Modul.
 
 Installieren Sie PayPal Checkout V. 2.2, nachdem Sie das Update wie im Folgenden beschrieben durchgeführt haben.
