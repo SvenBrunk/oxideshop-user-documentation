@@ -6,8 +6,21 @@ Dieses Dokument beschreibt das Update von OXID eShop 6.1.0 und höher auf OXID e
 .. |schritt| image:: ../../media/icons/schritt.jpg
               :class: no-shadow
 
-|schritt| Aktualisierung des Shops
-----------------------------------
+|schritt| PayPal Checkout deinstallieren
+----------------------------------------
+
+.. todo: #ML: Infos verif.
+
+Wenn Sie PayPal Checkout V. 1.1 nutzen, dann deinstallieren Sie das Modul.
+
+Installieren Sie PayPal Checkout V. 2.2, nachdem Sie das Update wie im Folgenden beschrieben durchgeführt haben.
+
+
+.. |schritt| image:: ../../media/icons/schritt.jpg
+              :class: no-shadow
+
+|schritt| Shop aktualisieren
+----------------------------
 1. In der Datei :file:`composer.json`, die sich im Hauptverzeichnis des Shops befindet, müssen Version geändert werden. Das betrifft die Sektion "require" und "require-dev".
 
 **OXID eShop Community Edition 6.2.0**
@@ -84,8 +97,8 @@ Dieses Dokument beschreibt das Update von OXID eShop 6.1.0 und höher auf OXID e
 
 ---------------------------------------------------------------------------------------------------
 
-|schritt| Aktualisierung der Modulkonfigurationen
--------------------------------------------------
+|schritt| Modulkonfigurationen aktualisieren
+--------------------------------------------
 In diesem Arbeitsschritt werden Einstellungen und Aktivierungsstatus der zum Shop gehörenden Module aus der Datenbank in Konfigurationsdateien :file:`*.yaml` transferiert.
 
 1. Mit den nachfolgenden Composer-Kommandos, welche im Hauptverzeichnis des Shops aufgerufen werden, installieren Sie die OXID eShop `update component <https://github.com/OXID-eSales/oxideshop-update-component>`__.
@@ -147,13 +160,27 @@ In diesem Arbeitsschritt werden Einstellungen und Aktivierungsstatus der zum Sho
 
 ---------------------------------------------------------------------------------------------------
 
+
+|schritt| PayPal Checkout installieren
+--------------------------------------
+
+.. todo: #ML: Infos verif.
+
+Wenn Sie PayPal Checkout nutzen und Version 1.1 wie oben beschrieben deinstalliert haben, dann tun Sie Folgendes:
+
+1. Installieren Sie PayPal Checkout V. 1.2.
+2. Führen Sie das Onboarding erneut durch.
+
+
+
+
 |schritt| Alte Dateien entfernen
 --------------------------------
 Die Datei :file:`xd_receiver.htm` aus dem Verzeichnis :file:`/source` wird nicht mehr benötigt und sollte gelöscht werden.
 
 ---------------------------------------------------------------------------------------------------
 
-Fehlersuche und -behebung
+Fehler suchen und beheben
 -------------------------
 Hinweise auf mögliche Probleme bei der Übernahme von Status und Einstellungen der Module finden sich im Dokument `Update from 6.1.x to 6.2.0 <https://docs.oxid-esales.com/developer/en/6.2/update/#troubleshooting>`_ der
 englischsprachigen Entwicklerdokumentation.
