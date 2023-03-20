@@ -9,7 +9,7 @@ Dieses Dokument beschreibt das Update von OXID eShop 6.1.0 und höher auf OXID e
 |schritt| PayPal Checkout deinstallieren
 ----------------------------------------
 
-.. todo: #ML: Infos verif.
+.. todo: #ML: Infos verif.: Composer update sollte reichen: Hinweis weg
 
 .. todo: #tbd: Verweis auf Vorgehen analog zu "VON AMAZON PAY 1.X AUF AMAZON PAY 2.X AKTUALISIEREN": Datenbank, Konfig-Einstellungen etc. sichern, Checkliste erstellen
 
