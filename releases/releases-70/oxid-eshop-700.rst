@@ -39,7 +39,7 @@ Technologies
 
 * Support for WebP image format.
 
-  For more information, see :ref:`configuration/images:image generation and quality`.
+  For more information, see :ref:`configuration/images:Specifying the image quality`.
 
 * Updating Symfony components to version 6.
 
