@@ -160,11 +160,11 @@ The displayed intrinsic size of 300 x 300 pixels differs from the maximum size b
 
      Image of the category that is advertised on the start page.
 
-     This image type is not currently implemented in the demo store, but could be implemented (example: :ref:`oxbaaz03c`).
+     This image type is not used in the current demo data. However, it is part of the APEX theme and can be used at any time (example: :ref:`oxbaaz03c`).
 
      Name of the function: ``category.getThumbUrl``
      |br|
-     Name of the parameter: ``CatThumbnailsize``
+     Name of the parameter: ``sCatThumbnailsize``
      |br|
      Default size: 1600 pixels wide and 500 pixels high.
 
