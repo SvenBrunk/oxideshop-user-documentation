@@ -283,7 +283,7 @@ The displayed intrinsic size of 300 x 300 pixels differs from the maximum size b
 
    * :guilabel:`Zoom picture size (width*height)`
 
-     Enlarged display of a modal product images that can be called up on the detail page.
+     Enlarged display of modal product images that can be called up on the detail page.
 
      For more information, :ref:`configuration/images:Choosing a zoom type`.
 
