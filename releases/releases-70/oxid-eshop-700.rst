@@ -27,15 +27,15 @@ Technologies
 
 * Switching the default template engine from Smarty to Twig
 
-  For more information, see `Twig Template Engine <https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/project/twig_template_engine/index.html>`_.
+  For more information, see `Twig Template Engine <https://docs.oxid-esales.com/developer/en/7.0/development/modules_components_themes/project/twig_template_engine/index.html>`_.
 
   Optionally, you can still use Smarty.
   |br|
-  For more information, see `Switching to the legacy Smarty template engine <https://docs.oxid-esales.com/developer/en/latest/update/eshop_from_65_to_7/install_smarty_engine.html>`_.
+  For more information, see `Switching to the legacy Smarty template engine <https://docs.oxid-esales.com/developer/en/7.0/update/eshop_from_65_to_7/install_smarty_engine.html>`_.
 
 * Automatic HTML escaping in the frontend.
 
-  For more information, see the developer documentation under `Check HTML escaping <https://docs.oxid-esales.com/developer/en/latest/update/eshop_from_65_to_7/modules.html#check-html-escaping>`_.
+  For more information, see the developer documentation under `Check HTML escaping <https://docs.oxid-esales.com/developer/en/7.0/update/eshop_from_65_to_7/modules/modules.html#port-to-v7-html-escaping-20221123>`_.
 
 * Support for WebP image format.
 
@@ -53,7 +53,7 @@ According to the philosophy of Composer, module files are read exclusively from 
 
 When installing modules, the files are no longer copied to the :file:`source/modules/` directory.
 
-For more information, see our developer documentation at `Module skeleton: metadata, composer and structure <https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/module/skeleton/index.html>`_.
+For more information, see our developer documentation at `Module skeleton: metadata, composer and structure <https://docs.oxid-esales.com/developer/en/7.0/development/modules_components_themes/module/skeleton/index.html>`_.
 
 YAML files
 ^^^^^^^^^^
@@ -62,12 +62,12 @@ We have adjusted the structure of the configuration files.
 
 For more information, see
 
-* `Modules configuration and setup <https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/project/module_configuration/modules_configuration.html>`_
-* `Troubleshooting <https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/module/installation_setup/troubleshooting.html>`_
+* `Modules configuration and setup <https://docs.oxid-esales.com/developer/en/7.0/development/modules_components_themes/project/module_configuration/modules_configuration.html>`_
+* `Troubleshooting <https://docs.oxid-esales.com/developer/en/7.0/development/modules_components_themes/module/installation_setup/troubleshooting.html>`_
 
 When updating to version 7, it is therefore necessary that you transfer your custom modules to the new structure.
 
-For more information, see `Check changes in the module handler <https://docs.oxid-esales.com/developer/en/latest/update/eshop_from_65_to_7/modules.html#port-to-v7-module-handler-20221123>`_.
+For more information, see `Check changes in the module handler <https://docs.oxid-esales.com/developer/en/7.0/update/eshop_from_65_to_7/modules/modules.html#port-to-v7-module-handler-20221123>`_.
 
 Console
 ^^^^^^^
