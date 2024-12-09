@@ -1,227 +1,205 @@
 OXID eShop 7.2.0
 ================
 
-Release-Datum: tbd
+Release-Datum: 2024-10-14
 
-Änderungen im Überblick
+Changes at a glance
 -----------------------
-Übersetze:
-* Core: Veraltete Demodaten-Bilder aus der CE Komponente entfernt
-* Core: Support von PHP 8.2/8.3
-* Core: Support von MySQL 8.0 und MariaDB11
-* Core: Order mail disable via parameter
-* Core: Verbesserung der Password-Vergessen/Passwort-Änderungs Funktionalität.
 
-* APEX: flexible Zoompics (feature)
-* APEX: script in ajax call (feature)
-* APEX: Google Analytics 4 (Pageaccess, orders)
-* APEX: SEO Microdata Update
+Core
+^^^^
+* Removal of obsolete demo data images from the CE component
+* PHP 8.2/8.3 support
+* MySQL 8.0 and MariaDB 11 support
+* :ref:`Possibility to disable order emails <disable_email_notifications>`
+* Improvement of the forgotten password/password change functionality
 
-* GDPR user data export in admin
+APEX
+^^^^
 
-* VCMS Bundle migration to new layout, improvements siehe changelogs
+* `Flexible zoom images (feature) <https://docs.oxid-esales.com/eshop/en/7.2/releases/releases-72/oxid-eshop-720.html#user-experience>`_
+* :ref:`Script in AJAX call (feature) <loading-dynamic-content>`
+* Google Analytics 4 (page views, orders)
+* SEO microdata update
 
+Administration
+^^^^^^^^^^^^^^
 
-Korrekturen
+:ref:`GDPR-compliant export of user data <GDPR-compliant-export>`
+
+dsgvo-konformes
+
+New modules for Professional and Enterprise Edition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* :productname:`OXID Security Module`
+* :productname:`OXID Module Shipping Cost Compensation Coupon`
+
+VCMS
+^^^^
+
+The VCMS bundle has been migrated to a new layout and contains various improvements.
+
+Corrections
 -----------
 
-* Die Compilation 7.2.0 beinhaltet die Korrekturen aus Compilation 7.0.4/7.1.1:
-  - Netto-Preise im Frontend
-  - Optimierte ShopId-Berechnung
+* Compilation 7.2.0 contains the corrections from Compilation 7.0.4/7.1.1:
 
-* User registration in the Private Sales mode - Emailbestätigung zur Aktivierung ist zwingend benötigt
+  * Net prices in the frontend
+  * Optimized ShopId calculation
 
-* New item in basket message display `#0007548 <https://bugs.oxid-esales.com/view.php?id=7548>`_, `PR-964 <https://github.com/OXID-eSales/oxideshop_ce/pull/964>`_
+* User registration in private sales mode - e-mail confirmation for activation is mandatory.
+* Display new message for items in the shopping cart: `#0007548 <https://bugs.oxid-esales.com/view.php?id=7548>`_, `PR-964 <https://github.com/OXID-eSales/oxideshop_ce/pull/964>`_
+* Multilingualism creation: `#0007683 <https://bugs.oxid-esales.com/view.php?id=7683>`_
+* Twig component ``ifcontent`` extension: `#0007231 <https://bugs.oxid-esales.com/view.php?id=7231>`_
+* Visual CMS 7.0.1 contains the corrections from Visual CMS 4.1.1/6.0.1
+* APEX: see `Changelog <https://github.com/OXID-eSales/oxideshop_ce/blob/b-7.2.x/CHANGELOG-7.2.md>`_.
 
-* Multiple language creation `#0007683 <https://bugs.oxid-esales.com/view.php?id=7683>`_
-
-* Twig Component ifcontent extension `#0007231 <https://bugs.oxid-esales.com/view.php?id=7231>`_
-
-* Visual CMS 7.0.1 enthält die Korrekturen aus Visual CMS 4.1.1/6.0.1
-
-* APEX siehe changelog
-
-
-
-En Detail
-=========
+In detail
+---------
 
 User Experience
----------------
+^^^^^^^^^^^^^^^
 
-Verbessern Sie mit drei neuen Zoom-Optionen das Einkaufserlebnis für Ihre Kunden in Ihrem OXID eShop.
+Improve the shopping experience for your customers in your OXID eShop with three new zoom options.
 
-* Hover Zoom: Diese Funktion bietet eine interaktive Möglichkeit, Produktbilder im Detail zu betrachten.
+* Hover Zoom: This function offers an interactive way to view product images in detail.
 
-  Wenn der Mauszeiger über das Bild fährt, wird es vergrößert, und die Vergrößerung folgt der Mausbewegung.
+  When the mouse pointer hovers over the image, it is enlarged and the magnification follows the mouse movement.
 
-  Dies erlaubt es den Nutzern, verschiedene Bildbereiche genau zu untersuchen und erhöht die Interaktivität und das Engagement.
+  This allows users to examine different areas of the image in detail and increases interactivity and engagement.
 
-* Modal-Zoom: Beim Klick auf das Produktbild wird dieses in einem größeren Modal-Fenster geöffnet, in dem weitere Details sichtbar werden.
+* Modal zoom: Clicking on the product image opens it in a larger modal window, revealing more details.
 
-  Zusätzlich kann der Nutzer innerhalb des Modals in das Bild hineinzoomen, um besonders feine Details zu erkennen.
+  In addition, the user can zoom into the image within the modal to see particularly fine details.
 
-  Dies bietet eine umfassende Möglichkeit, Produkte genau unter die Lupe zu nehmen.
+  This offers a comprehensive opportunity to take a close look at products.
 
-* Magnifier-Zoom: Hier wird eine Lupenfunktion aktiviert, wenn der Mauszeiger über das Bild fährt.
+* Magnifier zoom: A magnifying glass function is activated when the mouse pointer is moved over the image.
 
-  Ein separater Bereich zeigt eine stark vergrößerte Ansicht des Bildausschnitts direkt unter dem Mauszeiger.
+  A separate area shows a greatly enlarged view of the image section directly under the mouse pointer.
 
-  Dies ermöglicht eine präzise Betrachtung spezifischer Produktdetails, ohne das gesamte Bild zu vergrößern.
-
-
-Sie können den gewünschten Zoom global für Ihren OXID eShop einstellen. Zusätzlich können Sie für einzelne Artikel eine individuelle Zoom-Art festlegen.
-
-Weitere Informationen finden Sie unter :ref:`konfiguration/bilder:Zoom wählen`.
+  This enables precise viewing of specific product details without enlarging the entire image.
 
 
-Die Änderungen im Überblick
----------------------------
+You can set the desired zoom globally for your OXID eShop. You can also define an individual zoom type for individual items.
 
-* Sicherheit & Zuverlässigkeit
+For more information, see :ref:`configuration/images:Choosing a zoom type`.
 
-    Aus Sicherheitsgründen erfordert OXID eShop 7.2.0 die Composer-Version 2.7.7
-    Weitere Informationen finden Sie unter
-    * `Composer Version 2.7.7 <https://github.com/composer/composer/releases/tag/2.7.7>`_
-    * `CVE-2024-35241 <https://github.com/advisories/GHSA-47f6-5gq3-vx9c>`_
-    * `CVE-2024-35242 <https://github.com/advisories/GHSA-v9qv-c7wm-wgmf>`_
+Safety & reliability
+^^^^^^^^^^^^^^^^^^^^
 
-   Verbesserung der Password-Vergessen/Passwort-Änderungs Funktionalität.
+* For security reasons, OXID eShop 7.2.0 requires Composer version 2.7.7.
 
+   For more information, see
 
-* Barrierefreiheit
-  Kleinere Verbesserungen im APEX-Theme, siehe Changelog
+   * `Composer Version 2.7.7 <https://github.com/composer/composer/releases/tag/2.7.7>`_
+   * `CVE-2024-35241 <https://github.com/advisories/GHSA-47f6-5gq3-vx9c>`_
+   * `CVE-2024-35242 <https://github.com/advisories/GHSA-v9qv-c7wm-wgmf>`_
 
+* Improvement of the password forgetting/password change functionality.
 
-* Visual CMS & Mediathek
-  Siehe Changelog
+Accessibility
+^^^^^^^^^^^^^
 
-* Neue Funktionen für Entwickler
+Minor improvements in the APEX theme.
 
-  Bestellbestätigungsemaio kann per Parameter ausgeschaltet werden:
-  https://github.com/OXID-eSales/developer_documentation/blob/b-7.2.x/development/modules_components_themes/project/parameters.rst
+For more information, see the `Changelog <https://github.com/OXID-eSales/oxideshop_ce/blob/b-7.2.x/CHANGELOG-7.2.md>`_.
 
-  APEX: Javascript execution on ajax call, am besten auf Doku verlinken
+New modules
+^^^^^^^^^^^
 
+The following new modules are available for the Professional Edition and the Enterprise Edition:
 
-Verbesserung im Shop-Administrationsbereich
--------------------------------------------
+* :productname:`OXID Security Module`: Configure password policies to enforce the security of store users' passwords.
 
-Newsletter
-^^^^^^^^^^
-.. todo: OXDEV-7028: Newsletter export data enhanced · OXID-eSales/oxideshop-user-documentation@a19e24b -- keine neue Funktion, nur Doku erweitert: betrieb/newsletter/newsletter.rst
+  For more information, see `What is a password policy? <https://docs.oxid-esales.com/modules/security/de/1.0/einfuehrung.html#was-ist-eine-passwortrichtlinie>`_.
 
-As a shop owner I want to know exactly what Export users function does: https://oxid-esales.atlassian.net/browse/OXDEV-7028
+* :productname:`OXID module vouchers for shipping costs compensation`: Generate vouchers with flexible amount to compensate for shipping costs.
 
-Statt
-
-Die Datensätze werden in eine CSV-Datei geschrieben, deren Dateinamen aus :file:`Export_recipients_`, einem angehängten Datum im Format JJJJ-MM-TT und der Dateiendung :file:`.csv` besteht. Die Datei enthält Anrede, Vorname, Nachname, E-Mail-Adresse, Opt-in-Status und zugeordnete Benutzergruppen für jeden Abonnenten. Opt-in-Status kann abonniert, nicht abonniert oder nicht bestätigt sein. Die Datei kann direkt im verwendeten Browser geöffnet oder lokal auf dem Rechner gespeichert werden.
-Die Datensätze werden in eine CSV-Datei geschrieben, deren Dateinamen aus :file:`Export_user_recipient_status_`, einem angehängten Datum im Format JJJJ-MM-TT und der Dateiendung :file:`.csv` besteht. Die Datei enthält Anrede, Vorname, Nachname, E-Mail-Adresse, Opt-in-Status, Land und zugeordnete Benutzergruppen für jeden Abonnenten. Opt-in-Status kann abonniert, nicht abonniert oder nicht bestätigt sein. Die Datei kann direkt im verwendeten Browser geöffnet oder lokal auf dem Rechner gespeichert werden.
-
-:ref:`betrieb/newsletter/newsletter:Newsletter`
-
-
-Make mail sending optional (configuration option)
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-New parameter oxid_esales.email.disable_order_emails to enable and disable sending order emails
-
-.. todo: https://oxid-esales.atlassian.net/browse/OXDEV-6846
-.. todo: https://github.com/OXID-eSales/developer_documentation/commit/5c970ea708e2f2b9dd67a2cfcd0129acb5df9c1a
-
-.. todo: Ref testen: https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/project/parameters.html`_
-
-
-
-
-Neue Funktionen für Entwickler
-------------------------------
-
-Systemvoraussetzungen
-^^^^^^^^^^^^^^^^^^^^^
-
-* MySQL 8.0 (MySQL 5.7 wird unterstützt, aber wir empfehlen es sicht)
-* MariaDB (getestet mit MariaDB 11)
-* PHP Versionen 8.2 oder 8.3
-
-
-
-Sicherheit & Zuverlässigkeit
-----------------------------
-
-
-Barrierefreiheit
-----------------
-
-
+  For more information, see `OXID module vouchers for shipping costs compensation: What for/what not? <https://docs.oxid-esales.com/modules/freeshipping-coupons/de/1.0/einfuehrung.html>`_.
 
 Visual CMS & Mediathek
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo: Input MF
+See the Changelogs:
 
-Weitere Informationen zu Änderungen finden Sie in den folgenden Changelogs:
+* Visual CMS: https://github.com/OXID-eSales/visual_cms_module/blob/b-7.2.x/CHANGELOG-7.x.md
+* Mediathek: https://github.com/OXID-eSales/media-library-module/blob/b-7.2.x/CHANGELOG.md
+* WYSIWYG-Editor: https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/b-7.2.x/CHANGELOG.md
 
-* Visual CMS: https://github.com/OXID-eSales/visual_cms_module/blob/v7.0.1/CHANGELOG-7.x.md
-* WYSIWYG-Editor: https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/v4.2.0/CHANGELOG.md
-* Mediathek: https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md
+New functions for developers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Verbesserung im Shop-Administrationsbereich
--------------------------------------------
+* Note the following system requirements:
 
+  * MySQL 8.0 (MySQL 5.7 is supported, but we don't recommend it)
+  * MariaDB (tested with MariaDB 11)
+  * PHP versions 8.2 or 8.3
 
+  .. _Disable_email_notifications:
 
+* If required, deactivate the sending of e-mail notifications for orders.
 
-Neue Funktionen für Entwickler
-------------------------------
+  By default, an e-mail is sent to the customer and the store operator when a new order is received.
 
-Abhängigkeiten zwischen Modulen definieren
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  Deactivating email notifications can be useful, for example, if your ERP system sends the messages. In this case, only a log entry is created.
 
-#tbd
+  For more information, see the developer documentation (English) under `Disabling order notification e-mails <https://docs.oxid-esales.com/developer/en/7.2/development/modules_components_themes/project/parameters.html#disabling-order-notification-e-mails>`_.
 
+  .. todo: Javascript execution on ajax call:
 
-Verbesserung im Shop-Administrationsbereich
--------------------------------------------
+  .. _loading-dynamic-content:
 
-tbd
+* When working with dynamic content loaded via Ajax, use the ``setOuterHtmlAndExecuteScripts`` method to replace elements in the DOM with new content while handling the execution of embedded JavaScript in that content.
 
-Neue Funktionen für Entwickler
-------------------------------
-
-
-Clean Up
---------
+  For more information, see the developer documentation under `Loading dynamic content via AJAX <https://docs.oxid-esales.com/developer/en/7.2/development/modules_components_themes/theme/twig/loading-dynamic-content.html>`_.
 
 
+.. _GDPR-compliant-export:
 
-Aktualisierte Komponenten
-^^^^^^^^^^^^^^^^^^^^^^^^^
+GDPR-compliant export of user data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wir haben die folgenden Komponenten und Module aktualisiert:
+To send newsletters, you export a list of newsletter subscribers that you transfer to the external provider.
 
-* `OXID eShop CE (Update von v7.1.0 auf v7.2.0) <https://github.com/OXID-eSales/oxideshop_ce/blob/v7.2.0/CHANGELOG-7.2.md>`_
-* OXID eShop PE (Update von v7.1.0 auf v7.2.0)
-* OXID eShop EE (Update von v7.1.0 auf v7.2.0)
-* `Apex theme (Update von v1.4.0 auf v2.0.0) <https://github.com/OXID-eSales/apex-theme/blob/v2.0.0/CHANGELOG-2.x.md#v200---2024-10-14>`_
-* `Twig admin theme (Update von v2.4.0 auf v2.5.0) <https://github.com/OXID-eSales/twig-admin-theme/blob/v2.5.0/CHANGELOG-2.x.md>`_
-* `Twig component CE (Update von v2.4.0 auf v2.5.0) <https://github.com/OXID-eSales/twig-component/blob/v2.5.0/CHANGELOG-2.x.md>`_
-* Twig component PE (Update von v2.4.0 auf v2.5.0)
-* Twig component EE (Update von v2.4.0 auf v2.5.0)
-* `OXID eShop demo data CE (Update von v8.0.1 auf v8.0.2) <https://github.com/OXID-eSales/oxideshop_demodata_ce/blob/v8.0.1/CHANGELOG.md>`_
+Our documentation describes the structure of the CSV file in more detail.
+
+.. todo: verify url: https://docs.oxid-esales.com/eshop/de/7.2/operation/newsletters/newsletters.html#sending-newsletters
+
+For more information, see `Sending newsletters <https://docs.oxid-esales.com/eshop/de/7.2/operation/newsletters/newsletters.html#sending-newsletters>`_.
+
+
+Components
+----------
+
+Updated components
+^^^^^^^^^^^^^^^^^^
+
+We have updated the following components and modules:
+
+* `OXID eShop CE (update from v7.1.0 to v7.2.0) <https://github.com/OXID-eSales/oxideshop_ce/blob/v7.2.0/CHANGELOG-7.2.md>`_
+* OXID eShop PE (update from v7.1.0 to v7.2.0)
+* OXID eShop EE (update from v7.1.0 to v7.2.0)
+* `Apex theme (update from v1.4.0 to v2.0.0) <https://github.com/OXID-eSales/apex-theme/blob/v2.0.0/CHANGELOG-2.x.md#v200---2024-10-14>`_
+* `Twig admin theme (update from v2.4.0 to v2.5.0) <https://github.com/OXID-eSales/twig-admin-theme/blob/v2.5.0/CHANGELOG-2.x.md>`_
+* `Twig component CE (update from v2.4.0 to v2.5.0) <https://github.com/OXID-eSales/twig-component/blob/v2.5.0/CHANGELOG-2.x.md>`_
+* Twig component PE (update from v2.4.0 to v2.5.0)
+* Twig component EE (update from v2.4.0 to v2.5.0)
+* `OXID eShop demo data CE (update from v8.0.1 to v8.0.2) <https://github.com/OXID-eSales/oxideshop_demodata_ce/blob/v8.0.1/CHANGELOG.md>`_
 * OXID eShop demo data PE (update from v8.0.1 to v8.0.2)
-* OXID eShop demo data EE (Update von v8.0.2 auf v8.0.3)
-* `OXID eShop Demodata Installer (Update von 3.2.0 auf 3.3.0) <https://github.com/OXID-eSales/oxideshop-demodata-installer/blob/v3.3.0/CHANGELOG-3.x.md>`_
-* `OXID eShop doctrine migration integration (Update von v5.2.0 auf v5.3.0) <https://github.com/OXID-eSales/oxideshop-doctrine-migration-wrapper/blob/v5.3.0/CHANGELOG-5.x.md>`_
-* `WYSIWYG Editor + Mediathek (Update von v4.1.0 auf v4.2.0) <https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/v4.2.0/CHANGELOG.md>`_
-* `GDPR opt-in (Update von v4.0.0 auf v4.1.0) <https://github.com/OXID-eSales/gdpr-optin-module/blob/v4.1.0/CHANGELOG.md#v410---2024-10-14>`_
-* `Media Library Module (Update von v2.0.0 auf v2.1.1) <https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md>`_
-* Visual CMS (Update von v6.0.0 auf v7.0.2)
+* OXID eShop demo data EE (update from v8.0.2 to v8.0.3)
+* `OXID eShop Demodata Installer (update from 3.2.0 to 3.3.0) <https://github.com/OXID-eSales/oxideshop-demodata-installer/blob/v3.3.0/CHANGELOG-3.x.md>`_
+* `OXID eShop doctrine migration integration (update from v5.2.0 to v5.3.0) <https://github.com/OXID-eSales/oxideshop-doctrine-migration-wrapper/blob/v5.3.0/CHANGELOG-5.x.md>`_
+* `WYSIWYG Editor + Mediathek (update from v4.1.0 to v4.2.0) <https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/v4.2.0/CHANGELOG.md>`_
+* `GDPR opt-in (update from v4.0.0 to v4.1.0) <https://github.com/OXID-eSales/gdpr-optin-module/blob/v4.1.0/CHANGELOG.md#v410---2024-10-14>`_
+* `Media Library Module (update from v2.0.0 to v2.1.1) <https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md>`_
+* Visual CMS (update from v6.0.0 to v7.0.2)
 
-Komponenten der Compilation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Components of the compilation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Compilation enthält die folgenden Komponenten:
+The compilation contains the following components:
 
 * `OXID eShop CE 7.2.0 <https://github.com/OXID-eSales/oxideshop_ce/blob/v7.2.0/CHANGELOG-7.2.md>`_
 * OXID eShop PE 7.2.0
@@ -256,15 +234,9 @@ Die Compilation enthält die folgenden Komponenten:
 * `Eye-Able 3.0.3 <https://github.com/Tobias-Eye-Able/eye-able-oxid-module/blob/v3.0.3/CHANGELOG.md>`_
 
 
-Korrekturen
------------
-
-Die Korrekturen finden Sie im `Changelog <https://github.com/OXID-eSales/oxideshop_ce/blob/b-7.2.x/CHANGELOG-7.2.md>`_.
-
 Installation
 ------------
 
-Zum Installieren oder Aktualisieren folgen Sie den Anleitungen unter :doc:`Installation <../../installation/index>`.
-
+To install or upgrade, follow the instructions under :doc:`Installation and update <../../installation/index>`.
 
 .. Intern: , Status:

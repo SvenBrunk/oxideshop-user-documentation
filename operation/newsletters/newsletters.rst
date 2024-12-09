@@ -47,8 +47,8 @@ To display the newsletter subscribers, do the following:
 
    The members of the user group are displayed.
 
-Sending newsletter
-^^^^^^^^^^^^^^^^^^
+Sending newsletters
+^^^^^^^^^^^^^^^^^^^
 
 Newsletters are sent to customers by email at regular or irregular intervals.
 
