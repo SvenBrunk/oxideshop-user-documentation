@@ -1,10 +1,10 @@
 OXID eShop 7.2.0
 ================
 
-Release-Datum: 2024-10-14
+Release-Datum: 02-12-2024
 
 Changes at a glance
------------------------
+-------------------
 
 Core
 ^^^^
@@ -26,8 +26,6 @@ Administration
 ^^^^^^^^^^^^^^
 
 :ref:`GDPR-compliant export of user data <GDPR-compliant-export>`
-
-dsgvo-konformes
 
 New modules for Professional and Enterprise Edition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -113,11 +111,11 @@ The following new modules are available for the Professional Edition and the Ent
 
 * :productname:`OXID Security Module`: Configure password policies to enforce the security of store users' passwords.
 
-  For more information, see `What is a password policy? <https://docs.oxid-esales.com/modules/security/de/1.0/einfuehrung.html#was-ist-eine-passwortrichtlinie>`_.
+  For more information, see `What is a password policy? <https://docs.oxid-esales.com/modules/security/en/1.0/introduction.html#what-is-a-password-policy>`_.
 
-* :productname:`OXID module vouchers for shipping costs compensation`: Generate vouchers with flexible amount to compensate for shipping costs.
+* :productname:`OXID Module Shipping Cost Compensation Coupon`: Generate coupons with flexible amount to compensate for shipping costs.
 
-  For more information, see `OXID module vouchers for shipping costs compensation: What for/what not? <https://docs.oxid-esales.com/modules/freeshipping-coupons/de/1.0/einfuehrung.html>`_.
+  For more information, see `OXID Module Shipping Cost Compensation Coupon: What for/what not? <https://docs.oxid-esales.com/modules/freeshipping-coupons/en/1.0/introduction.html>`_.
 
 Visual CMS & Mediathek
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -146,8 +144,6 @@ New functions for developers
   Deactivating email notifications can be useful, for example, if your ERP system sends the messages. In this case, only a log entry is created.
 
   For more information, see the developer documentation (English) under `Disabling order notification e-mails <https://docs.oxid-esales.com/developer/en/7.2/development/modules_components_themes/project/parameters.html#disabling-order-notification-e-mails>`_.
-
-  .. todo: Javascript execution on ajax call:
 
   .. _loading-dynamic-content:
 
