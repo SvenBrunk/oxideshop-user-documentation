@@ -1,8 +1,7 @@
-:orphan:
 OXID eShop 7.0.4
 ================
 
-Release-Datum: xx.xx.2024
+Release-Datum: 2024-11-02
 
 Changes
 -------
