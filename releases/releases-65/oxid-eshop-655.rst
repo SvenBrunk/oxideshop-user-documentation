@@ -1,7 +1,8 @@
+:orphan:
 OXID eShop 6.5.5
 ================
 
-Release date: 02-12-2024
+Release date: tbd
 
 To close a security vulnerability in Composer, install OXID eShop 6.5.5.
 
