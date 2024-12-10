@@ -43,7 +43,7 @@ Corrections
 
 * Compilation 7.2.0 contains the corrections from Compilation 7.0.4/7.1.1:
 
-  * Net prices in the frontend
+  * Display of net prices in the frontend
   * Optimized ShopId calculation
 
 * User registration in private sales mode - e-mail confirmation for activation is mandatory.
@@ -157,13 +157,9 @@ New functions for developers
 GDPR-compliant export of user data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To send newsletters, you export a list of newsletter subscribers that you transfer to the external provider.
+As an administrator, export all data associated with a specific user in accordance with GDPR regulations.
 
-Our documentation describes the structure of the CSV file in more detail.
-
-.. todo: verify url: https://docs.oxid-esales.com/eshop/de/7.2/operation/newsletters/newsletters.html#sending-newsletters
-
-For more information, see `Sending newsletters <https://docs.oxid-esales.com/eshop/de/7.2/operation/newsletters/newsletters.html#sending-newsletters>`_.
+For more information, see the GDPR Opt-in documentation (German) under `Benutzerdaten GDPR-konform exportieren <https://docs.oxid-esales.com/modules/gdpr-optin/de/latest/funktionsbeschreibung.html#benutzerdaten-gdpr-konform-exportieren>`_.
 
 
 Components
@@ -174,7 +170,7 @@ Updated components
 
 We have updated the following components and modules:
 
-* `OXID eShop CE (update from v7.1.0 to v7.2.0) <https://github.com/OXID-eSales/oxideshop_ce/blob/v7.2.0/CHANGELOG-7.2.md>`_
+* `OXID eShop CE (update from v7.1.1 to v7.2.0) <https://github.com/OXID-eSales/oxideshop_ce/blob/v7.2.0/CHANGELOG-7.2.md>`_
 * OXID eShop PE (update from v7.1.0 to v7.2.0)
 * OXID eShop EE (update from v7.1.0 to v7.2.0)
 * `Apex theme (update from v1.4.0 to v2.0.0) <https://github.com/OXID-eSales/apex-theme/blob/v2.0.0/CHANGELOG-2.x.md#v200---2024-10-14>`_
@@ -189,8 +185,8 @@ We have updated the following components and modules:
 * `OXID eShop doctrine migration integration (update from v5.2.0 to v5.3.0) <https://github.com/OXID-eSales/oxideshop-doctrine-migration-wrapper/blob/v5.3.0/CHANGELOG-5.x.md>`_
 * `WYSIWYG Editor + Mediathek (update from v4.1.0 to v4.2.0) <https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/v4.2.0/CHANGELOG.md>`_
 * `GDPR opt-in (update from v4.0.0 to v4.1.0) <https://github.com/OXID-eSales/gdpr-optin-module/blob/v4.1.0/CHANGELOG.md#v410---2024-10-14>`_
-* `Media Library Module (update from v2.0.0 to v2.1.1) <https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md>`_
-* Visual CMS (update from v6.0.0 to v7.0.2)
+* `Media Library Module (update from v2.0.1 to v2.1.1) <https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md>`_
+* Visual CMS (update from v6.0.1 to v7.0.2)
 
 Components of the compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
