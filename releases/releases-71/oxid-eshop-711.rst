@@ -31,7 +31,7 @@ Corrections
 * Compilation 7.1.1 contains the corrections from compilation 7.0.4:
 
   * Frontend: Correct display of net prices
-  * Backend: Optimization of performance by improving the `ShopId`` calculation
+  * Backend: Optimization of performance by improving the `ShopId` calculation
 
   For more information, see the `Release Notes for OXID eShop 7.0.4 <https://docs.oxid-esales.com/eshop/en/7.0/releases/releases-70/oxid-eshop-704.html#corrections>`_.
 
