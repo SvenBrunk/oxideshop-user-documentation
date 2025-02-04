@@ -117,13 +117,13 @@ The following new modules are available for the Professional Edition and the Ent
 
   For more information, see `OXID Module Shipping Cost Compensation Coupon: What for/what not? <https://docs.oxid-esales.com/modules/freeshipping-coupons/en/1.0/introduction.html>`_.
 
-Visual CMS & Mediathek
-^^^^^^^^^^^^^^^^^^^^^^
+Visual CMS & Media Library
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See the Changelogs:
 
 * Visual CMS: https://github.com/OXID-eSales/visual_cms_module/blob/b-7.2.x/CHANGELOG-7.x.md
-* Mediathek: https://github.com/OXID-eSales/media-library-module/blob/b-7.2.x/CHANGELOG.md
+* Media Library: https://github.com/OXID-eSales/media-library-module/blob/b-7.2.x/CHANGELOG.md
 * WYSIWYG-Editor: https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/b-7.2.x/CHANGELOG.md
 
 New functions for developers
@@ -183,7 +183,7 @@ We have updated the following components and modules:
 * OXID eShop demo data EE (update from v8.0.2 to v8.0.3)
 * `OXID eShop Demodata Installer (update from 3.2.0 to 3.3.0) <https://github.com/OXID-eSales/oxideshop-demodata-installer/blob/v3.3.0/CHANGELOG-3.x.md>`_
 * `OXID eShop doctrine migration integration (update from v5.2.0 to v5.3.0) <https://github.com/OXID-eSales/oxideshop-doctrine-migration-wrapper/blob/v5.3.0/CHANGELOG-5.x.md>`_
-* `WYSIWYG Editor + Mediathek (update from v4.1.0 to v4.2.0) <https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/v4.2.0/CHANGELOG.md>`_
+* `WYSIWYG Editor + Media Library (update from v4.1.0 to v4.2.0) <https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/v4.2.0/CHANGELOG.md>`_
 * `GDPR opt-in (update from v4.0.0 to v4.1.0) <https://github.com/OXID-eSales/gdpr-optin-module/blob/v4.1.0/CHANGELOG.md#v410---2024-10-14>`_
 * `Media Library Module (update from v2.0.1 to v2.1.1) <https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md>`_
 * Visual CMS (update from v6.0.1 to v7.0.2)
@@ -221,7 +221,7 @@ The compilation contains the following components:
 * Visual CMS 7.0.2 (PE/EE)
 
 * `WYSIWYG Editor 4.2.0 <https://github.com/OXID-eSales/ddoe-wysiwyg-editor-module/blob/v4.2.0/CHANGELOG.md>`_
-* `Mediathek 2.1.1 <https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md>`_
+* `Media Library 2.1.1 <https://github.com/OXID-eSales/media-library-module/blob/v2.1.1/CHANGELOG.md>`_
 * `Makaira 2.1.2 <https://github.com/MakairaIO/oxid-connect-essential/blob/2.1.2/CHANGELOG.md>`_
 * `Eye-Able 3.0.3 <https://github.com/Tobias-Eye-Able/eye-able-oxid-module/blob/v3.0.3/CHANGELOG.md>`_
 
